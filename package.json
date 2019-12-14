@@ -1,7 +1,7 @@
 {
   "name": "modern_admin",
   "version": "1.0.0",
-  "description": "### Landing page",
+  "description": "## Application Heroku Link The link to [Name of our App](https://moderncoveradmin.herokuapp.com/)",
   "main": "server.js",
   "dependencies": {
     "alert-node": "^2.0.3",
