@@ -2,7 +2,7 @@
 
 ### Landing page
     
-   ![Alt Text] https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
+   ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
 
 ### admin  page
 
