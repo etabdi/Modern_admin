@@ -6,7 +6,7 @@
 
 ### admin  page
 
-  ![Alt Text](https://github.com/etabdi/Them-crooked-vultures/blob/master/public/img/profilew.PNG)
+  ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/main_page.JPG)
    
      Display user’s trip information   
      
