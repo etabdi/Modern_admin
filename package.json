@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "## Application Heroku Link The link to [Name of our App](https://moderncoveradmin.herokuapp.com/)",
   "main": "server.js",
+  
   "dependencies": {
     "alert-node": "^2.0.3",
     "cryptr": "^6.0.1",
