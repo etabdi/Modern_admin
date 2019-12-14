@@ -13,7 +13,7 @@
 
         <ul class="right hide-on-med-and-down">
           <li>
-            <a class='right dropdown-button' href='' data-activates='user_dropdown'><i class=' material-icons'>account_circle</i></a>
+            <a class='right dropdown-button' href='/'><i class=' material-icons'>account_circle</i></a>
           </li>
         </ul>
 
@@ -38,20 +38,23 @@
           <div class="row">
             <div class="left card-title">
               <b>User Management</b>
+              
             </div>
           </div>
+  
+
 
           <div class="row">
-            <a href="#!">
+            <a href="#modal1">
               <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
                 <i class="indigo-text text-lighten-1 large material-icons">person</i>
-                <span class="indigo-text text-lighten-1"><h5>Add User</h5></span>
+                <span class="indigo-text text-lighten-1 modal-trigger"href="#modal1"><h5>Add User</h5></span>
               </div>
             </a>
             <div class="col s1">&nbsp;</div>
             <div class="col s1">&nbsp;</div>
 
-            <a href="#!">
+            <a href="#modal1">
               <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
                 <i class="indigo-text text-lighten-1 large material-icons">people</i>
                 <span class="indigo-text text-lighten-1"><h5>Customer</h5></span>
@@ -176,7 +179,67 @@
       </ul>
     </div>
   </main>
+<div id="modal1" class="modal">
 
+  <div class="modal-content">
+    <div>
+      <a class="modal-close"><i class="material-icons">close</i></a>
+    </div>
+    <h4 class="center">Account Sign Up</h4>
+    <p class="center">Sign up with us to start planning your trips!</p>
+
+    <div class="row">
+      <form class="col s12" action="/controllers/register-controller" method="POST">
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" placeholder="First Name" name="first_name" required>
+            {{!-- <input id="first_name" type="text" class="validate"> --}}
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="text" placeholder="Last Name" name="last_name" required>
+            {{!-- <input id="last_name" type="text" class="validate"> --}}
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            {{!-- <input id="username" type="text" class="validate"> --}}
+            <input type="text" placeholder="Enter User Name" name="username" required>
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="password" placeholder="Enter Password" name="password" required>
+            {{!-- <input id="password" type="password" class="validate"> --}}
+            <label for="password" name="password">Password</label>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="input-field col s12">
+            {{!-- <input id="email" type="email" class="validate"> --}}
+            <input type="email" placeholder="Enter Email adress" name="email" required>
+            <label for="email" name="email">Email</label>
+          </div>
+        </div>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <div class="col s6">
+      <a href="#!" class="modal-close waves-effect waves-green btn red darken-4 left">Cancel</a>
+    </div>
+    <div class="col s6">
+      <button href="#!" class="waves-effect waves-green btn green accent-4 signupbtn" type="submit">Sign Up</button>
+
+    </div>
+  </div>
+</div>
+</form>
   <footer class="indigo page-footer">
 
   </footer>
@@ -229,10 +292,10 @@ body {
 }
 }
 </style>
-<script>
+{{!-- <script>
     $('.button-collapse').sideNav();
 
 $('.collapsible').collapsible();
 
 $('select').material_select();
-</script>
+</script> --}}
