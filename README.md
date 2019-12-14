@@ -11,7 +11,6 @@
 
   ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/main_page.JPG)
    
-     Display user’s trip information   
      
 
 
