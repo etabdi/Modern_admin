@@ -30,4 +30,4 @@
       Jawsdb      
     
 ## Heroku Link:
-https://daydreamvva.herokuapp.com/
+https://moderncoveradmin.herokuapp.com/
