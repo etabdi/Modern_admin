@@ -2,7 +2,7 @@
 
 ### Landing page
     
-   ![Alt Text](https://github.com/etabdi/Them-crooked-vultures/blob/master/public/img/main.PNG)
+   ![Alt Text] https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
 
 ### admin  page
 
