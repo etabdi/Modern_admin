@@ -7,7 +7,7 @@
     
    ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/cover.JPG)
 
-### admin  page
+### Admin  page
 
   ![Alt Text](https://github.com/etabdi/Modern_admin/blob/master/public/img/main_page.JPG)
    
