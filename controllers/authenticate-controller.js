@@ -7,6 +7,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 var alert = require("alert-node");
+var con = require("../config/config");
 
 module.exports.authenticate = function(req, res) {
   var username = req.body.username_r;
@@ -24,8 +25,22 @@ module.exports.authenticate = function(req, res) {
         if (results.length > 0) {
           var decryptedString = cryptr.decrypt(results[0].password);
           if (password == decryptedString) {
-            res.render("example", { user: req.body.username_r });
-            // console.log(username+ "chacking id working")
+            // res.render("example", { user: req.body.username_r });
+              
+                var sqls = "SELECT * FROM accounts";
+
+                
+                con.query(sqls, [username, first_name], function(err, result) {
+                  if (err) throw err;
+                  console.log("profile test is woking")
+                  res.render("example", {
+                    id:result,
+                    username: result,
+                    name: result,
+                    name: req.body.username
+                  });
+                });
+                          // console.log(username+ "chacking id working")
           } else {
             //  res.json({
             //    status: false,
